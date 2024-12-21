@@ -41,3 +41,5 @@ class UpdateRecipe(UserPassesTestMixin, LoginRequiredMixin, UpdateView):
 
         created_by_current_user = self.get_object.author == self.request.user
         return created_by_current_user
+
+
